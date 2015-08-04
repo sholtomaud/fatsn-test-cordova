@@ -37,7 +37,7 @@ build-prod-ios: assets platforms/ios
 build-prod-android: assets platforms/android
 	$(cordova) build android --release
 
-build-prod-android: assets platforms/browser
+build-prod-browser: assets platforms/browser
 	$(cordova) build browser --release
 
 ripple-emulate:
