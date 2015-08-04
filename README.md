@@ -1,15 +1,17 @@
 fastn-test-cordova
 ==================
 
-to install you will need Android SDK & potentially also ADP & Cordova CLI
+To install you will need Android SDK, ADP & Cordova CLI.
+
+Install cordova with:
 
 ```javascript
 npm i cordova -g
 ```
 
-once you have the repo ```make``` should install all the npm dependencies with the sequence below.
+Once you have the `fastn-test-cordova` repo, ```make``` should install all the npm dependencies with the sequence below.
 
-HOWEVER before your android build there appears to be a cordova glitch for which I applied [this fix](http://stackoverflow.com/a/30240520/4830780)
+HOWEVER!!! - Before your android build there appears to be a cordova glitch for which I applied [this fix](http://stackoverflow.com/a/30240520/4830780)
 
 ```bash
 >make init
