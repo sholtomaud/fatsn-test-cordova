@@ -3,8 +3,9 @@ var fastn = require('./fastn');
 var crel = require('crel');
 
 var app = fastn('div',
-	require('./hello')()
+	require('./stuff')()
 );
+
 
 window.onload = function(){
 	app.render();
@@ -12,4 +13,5 @@ window.onload = function(){
 	crel(document.body,
 		app.element
 	);
+
 };

@@ -23,7 +23,7 @@
         <icon src="www/res/img/icon.png" platform="android" density="xhdpi" />
     <platform name="android">
         <allow-intent href="market:*" />
-        <splash src="res/screen/android/logo.png" density="port-hdpi"/>
+        <splash src="www/res/screen/android/logo.png" density="port-hdpi"/>
     
         <!-- <preference name="SplashScreen" value="splash"/> -->
         

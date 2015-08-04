@@ -49,7 +49,8 @@ assets: www/index.css www/index.js
 www/index.js: $(shell find js -type f)
 	# $@ is an alias for the `target` or www/index.js in this case
 	# this will build output file to www/index.js
-	$(nodebin)/browserify -t browserify-file --debug js/index.js -o $@
+	# $(nodebin)/browserify -t browserify-file --debug js/index.js -o $@
+	$(nodebin)/watchify -t ieify-transform js/index.js -o 'uglifyjs -cm > $@' -v
 
 # build css resource from stylus assets
 www/index.css: $(shell find css -type f)
@@ -64,7 +65,7 @@ www/index.css: $(shell find css -type f)
 # we run `make assets` when js, styl, or html files change
 # in the js or css folders
 devwatch:
-	$(nodemon) -w js -w css -e js,css,styl,html --exec "make assets"
+	$(nodemon) -w js -w css -e js,css,styl,html --exec "make assets" #--exec "make build" --exec "cordova run android --device"
 
 # absolute clean, basically returns repo to checkout state
 clean:
