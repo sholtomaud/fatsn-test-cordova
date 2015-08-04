@@ -13,5 +13,4 @@ window.onload = function(){
 	crel(document.body,
 		app.element
 	);
-
 };
