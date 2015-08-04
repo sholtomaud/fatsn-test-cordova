@@ -15,6 +15,14 @@ HOWEVER!!! - Before your android build there appears to be a cordova glitch for 
 
 ```bash
 >make init
+>make devwatch
+```
+
+`devwatch` is like watchify.
+
+In a separate termial you can then make the cordova apps.
+
+```bash
 >make build
 >cordova run browser
 >cordova run android -device
