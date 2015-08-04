@@ -13,7 +13,7 @@ Once you have the `fastn-test-cordova` repo, ```make``` should install all the n
 
 HOWEVER!!! - Before your android build there appears to be a cordova glitch for which I applied [this fix](http://stackoverflow.com/a/30240520/4830780)
 
-```bash
+```shell
 >make init
 >make devwatch
 ```
@@ -22,7 +22,7 @@ HOWEVER!!! - Before your android build there appears to be a cordova glitch for 
 
 In a separate termial you can then make the cordova apps.
 
-```bash
+```shell
 >make build
 >cordova run browser
 >cordova run android -device
