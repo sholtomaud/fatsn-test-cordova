@@ -1,0 +1,36 @@
+{
+  "name": "fastn-test-leaflet",
+  "version": "1.0.0",
+  "description": "fastn test of leaflet maps",
+  "main": "index.browser.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "beefy index.js:index.browser.js --live",
+    "test": "node ./tests",
+    "make": "make "
+  },
+  "author": "Sholto Maud",
+  "license": "MIT",
+  "dependencies": {
+    "crel": "^2.1.8",
+    "fastclick": "^1.0.6",
+    "fastn": "^1.10.6",
+    "flaps": "^3.1.9",
+    "laidout": "^1.0.0",
+    "material-design-icons": "^2.0.0"
+  },
+  "devDependencies": {
+    "browserify": "^10.2.6",
+    "browserify-file": "^0.0.0",
+    "cordova": "^5.1.1",
+    "debug": "^2.2.0",
+    "jshint-stylish": "^2.0.1",
+    "lazypipe": "^1.0.1",
+    "nodemon": "^1.0.15",
+    "ripple-emulator": "courseoff/ripple-emulator",
+    "stylus": "^0.52.0",
+    "xml2json": "^0.4.0"
+  }
+}

@@ -1,0 +1,464 @@
+.mainHeader{
+  z-index: 4;
+  position: fixed;
+  left:0;
+  right: 0;
+  top: 0;
+  height: 50px;
+  background: rgba(255,153,0,0.7);
+  border-bottom: solid 2px rgba(0,0,0,0.6); 
+  width: 100%;
+  padding-left: 60px ;
+  display: flex;
+}
+
+.mainHeader .material-icons{
+  padding: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px; 
+  padding-bottom: 10px;  
+}
+
+.header-search{
+  font-family: 'Arial';
+  color: black;
+  font-size: 20px;
+  width: 100px;
+  margin-bottom: 5px;
+  /*background: rgba(255,153,0,0.8);*/
+  height: 30px; 
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.company{
+  font-family: 'Squada One', cursive;
+  color: black;
+  /*display: inline;*/
+  font-size: 30px;
+  /*width: auto;*/ 
+}
+
+input[type="radio"]{ 
+  font-weight: bold;
+  border: solid black 3px;
+  padding: 10px; 
+}
+
+.loginName {
+  display: inline-block;
+  font-family: Arial;
+  font-size: 12px;
+}
+
+.men{
+  z-index: 5;
+  /*position: fixed;*/
+  top: 0;
+  left: 0;
+  /*margin: 0px;
+  margin-top: 50px;
+  width: 50px;
+  */
+  height: 100%;
+  background-color: gray;
+}
+
+.letter-icons:hover, .material-icons:hover{
+  background-color: #E6E6E6;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px #888888;
+  border-color: gray;
+}
+
+.material-icons .exit{
+  text-align: right;
+  right: 0;
+  position: fixed;
+}
+
+.letter-icons{
+  font-size: 25px;
+  word-wrap: break-word;
+  font-family: 'Squada One', cursive;
+}
+
+.menu{
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  bottom:0;
+}
+
+.iconPanel{
+
+  z-index: 8;
+  position: fixed;
+  top: 0;
+  bottom:0;
+  width: 50px;
+  height:100%;
+/*  margin-top: 50px;*/
+  background: rgba(192,192,192,1);
+  box-shadow: 2px 2px 2px #888888;
+}
+
+
+.iconRightPanel{
+  z-index: 8;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom:0;
+  width: 50px;
+  height:100%;
+/*  margin-top: 50px;*/
+  background: rgba(192,192,192,1);
+  box-shadow: 2px 2px 2px #888888;
+}
+
+
+hr{
+  margin-bottom: 5px;
+  margin-top: 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+.horizontal-controls .material-icons {
+  margin-right:  2.5px;
+  margin-left:  2.5px;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 30px;  /* Preferred icon size */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+
+
+.material-icons-header-menu{
+  padding: 10px;
+  
+}
+
+hr .vr {
+  transform:rotate(90deg);
+}
+
+.menu .panel{
+    position: absolute;
+    width: auto;
+    height: 100%;
+    background: rgba(192,192,192,1);
+    padding-left: 10px;
+    font-family: 'Squada One', cursive;
+    /*margin-top: 50px;*/
+    box-shadow: 2px 2px 2px #888888;
+  
+}
+
+.menu.right{
+    left: auto;
+    right: 0;
+    z-index: 8;
+}
+
+.menu.right .panel{
+    right: 0;
+    box-shadow: -2px -2px 2px #888888;
+    width: auto;
+/*    margin-left: 30px;*/
+}
+
+.formTitle{
+    font-family: 'Squada One', cursive;
+    font-size: 30px;
+    padding-top:20px;
+    height: 50px
+}
+
+.menu.left{
+    margin-left: 50px;
+    left: auto;
+    right: 0;
+    z-index: 5;
+}
+
+.menu.left .panel{
+    right: 0;
+    box-shadow: 2px -2px 2px #888888;
+    width: auto;
+/*    margin-left: 30px;*/
+}
+
+.fields{
+  overflow-y: auto;
+  overflow-x: hidden;
+  left:0;
+  width: 420px;
+  max-height: 400px;
+  margin-right: 0px;
+  margin-bottom: 50px;
+  bottom: 0;
+}
+
+.fields-pane{
+  overflow-y: auto;
+  overflow-x: hidden;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+  
+}
+
+.form-controls{
+  /*z-index: 9;*/
+  /*right: 0;*/
+  width: 50px;
+}
+
+
+.verticle-controls{
+  display: fixed; 
+  z-index: 9;
+  top: 0;
+  right: 0;
+  padding-top:    5px;
+  padding-bottom: 5px;
+  padding-left:   10px;
+  padding-right:  10px;
+}
+
+
+.field-item {
+    width: 100%;
+    display: inline-block;
+    padding: 5px;
+}
+
+.field-name {
+    width: 100px;
+    font-family: Roboto;
+    font-size: 13px;
+    text-align: right;
+    vertical-align: bottom;
+    padding-right: 5px;
+    padding-bottom: 4px;
+    display: inline-block;
+}
+
+.formControls {
+    width: 100%;
+    display: inline-block;
+    left: 0;
+}
+
+.formNav {
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+    font-family: 'Squada One', cursive;
+    font-style: normal;
+    /*border:3px solid #8AC007;*/
+}
+
+.iconMenuControls {
+    width: 100%;
+    font-size: 30px;
+}
+
+.field-input{
+    font-family: Consolas, monaco, monospace;
+    color: black;
+    right: 0;
+    display: inline-block;
+    height: 18px;
+    /*outline: solid 1px gray;*/
+    border: 1px solid #808080;
+    
+    /*box-shadow:inset 1px 1px 1px #000000;
+    -moz-box-shadow:inset 0 0 1px #000000;
+    -webkit-box-shadow:inset 0 0 1px #000000;*/
+}
+
+input[disabled] {
+    color: gray;
+    background: lightGray;
+}
+
+
+.map{
+    position: fixed !important;
+    top:0;
+    bottom: 0;
+    left: 50px;
+    right: 0px;
+}
+
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: lightGray;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    top:6px;
+    right:100px;
+}
+
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+
+.legend {
+    line-height: 18px;
+    color: #555;
+}
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+
+
+.loginModal, .gpsModal{
+    display: block;
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 4;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+
+.loginHeader{
+    display: inline-block;
+    padding: 10px;
+    bottom: 0;
+}
+
+.loginTitle {
+    font-family: 'Squada One', cursive;
+    font-size: 42px;
+}
+
+.loginInput {
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.02) 0%, rgba(255, 255, 255, 0.02) 50%);
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    height: 25px;
+    padding: 5px 10px 5px 5px;
+    font-size: 15px;
+    width: 200px;
+    border-radius: 3px;
+    margin-bottom: 8px;
+}
+
+.search{
+    right:0;
+    position: fixed;
+    margin: auto;
+    display: inline-block;
+    height: 30px;
+}
+
+input.searchInput{
+    display: inline-block;
+    max-height: 30px;
+    font-size: 14px;
+    border: 2px solid black;
+}
+
+.loginSubTitle{
+    font-family: Roboto;
+    font-size: 16px;
+    /*font-weight: bold;*/
+    padding-left: 10px;
+    position: relative;
+}
+
+.loginDetails{
+    position: relative;
+    margin: 20px;
+    width: 120px;
+    font-family: 'Squada One', cursive;
+    font-size: 20px;
+}
+
+form.login{
+    position: absolute;
+    height: 300px;
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    padding: 8px;
+    background: rgba(255,153,0,0.8);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+    border-radius: 13px;
+}
+
+/*
+input{
+    margin-top: 5px ;
+    margin-bottom: 10px ;
+    width: 180px;
+    font-family: Consolas, monaco, monospace;
+    color: black;
+    padding: 3px;
+}
+*/
+
+button{
+    font-size: 18px;
+    background-color: black;
+    color:white;
+    border: black solid 1px;
+    border-radius: 8px;
+    margin-top: 10px;
+    padding: 10px;   
+}
+
+.tooltip:hover:after{
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    bottom: 26px;
+    color: #fff;
+    content: attr(title);
+    left: 20%;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 220px;
+}
