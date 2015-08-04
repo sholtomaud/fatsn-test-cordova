@@ -1,17 +1,17 @@
 var fastn = require('./fastn');
 
-var working = fastn('div',
-	fastn('div','Some Company'), 
-	fastn('h2','Some other Company')
+var basic = fastn('div',
+	fastn('div','Works, but not with {class:"some-class"} in Android 4.1'), 
+	fastn('h2','Some other text')
 );
 
-var notWorking = fastn('div',
-	fastn('div',{'class':'company'},'Some Company'), 
-	fastn('h2','Some other Company')
+var basicWithCrosswalk = fastn('div',
+	fastn('div',{'class':'company'},'Crosswalk example working in Android 4.1'), 
+	fastn('h2','Some other text')
 );
 
 module.exports = function(){
-	return working;
+	return basicWithCrosswalk;
 };
 
 

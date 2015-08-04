@@ -11,6 +11,7 @@ init: plugins platforms
 
 plugins:
 	mkdir plugins
+	$(cordova) plugin add cordova-plugin-crosswalk-webview
 
 platforms: install-deps platforms/ios platforms/android platforms/browser
 

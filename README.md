@@ -1,7 +1,7 @@
 fastn-test-cordova
 ==================
 
-To install you will need Android SDK, ADP & Cordova CLI.
+To install you will need Android SDK, ADP & Cordova CLI. You will also need crosswalk for Android v4.4 and below.Crosswalk is installed for you by make init.
 
 Install cordova with:
 
@@ -9,16 +9,19 @@ Install cordova with:
 npm i cordova -g
 ```
 
-Once you have the `fastn-test-cordova` repo, ```make``` should install all the npm dependencies with the sequence below.
-
-HOWEVER!!! - Before your android build there appears to be a cordova glitch for which I applied [this fix](http://stackoverflow.com/a/30240520/4830780)
+Once you have cloned the `fastn-test-cordova` repo with `git`, `make should install all the npm dependencies with the sequence below.
 
 ```shell
 >make init
->make devwatch
 ```
 
-`devwatch` is like watchify.
+Before your android build there appears to be a cordova glitch for which you can apply [this fix](http://stackoverflow.com/a/30240520/4830780)
+
+Devwatch will run watchify to watch for changes to the js folder, and css
+
+```
+>make devwatch
+```
 
 In a separate termial you can then make the cordova apps.
 
@@ -29,3 +32,4 @@ In a separate termial you can then make the cordova apps.
 
 ```
 
+You may have to run these as sudo user depending on your node & cordova setup.
