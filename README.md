@@ -7,7 +7,7 @@ to install you will need Android SDK & potentially also ADP & Cordova CLI
 npm i cordova -g
 ```
 
-once you have the repo make should install all the npm dependencies
+once you have the repo ```make``` should install all the npm dependencies
 
 ```bash
 >make init
