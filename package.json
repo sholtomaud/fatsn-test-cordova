@@ -32,7 +32,6 @@
     "jshint-stylish": "^2.0.1",
     "lazypipe": "^1.0.1",
     "nodemon": "^1.0.15",
-    "ripple-emulator": "courseoff/ripple-emulator",
     "stylus": "^0.52.0",
     "uglify-js": "^2.4.24",
     "watchify": "^3.3.1",
