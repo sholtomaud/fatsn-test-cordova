@@ -7,10 +7,14 @@ var app = fastn('div',
 );
 
 
-window.onload = function(){
-	app.render();
+// window.onload = function(){
+// 	app.render();
 
-	crel(document.body,
-		app.element
-	);
-};
+// 	crel(document.body,
+// 		app.element
+// 	);
+// };
+
+window.onerror = function(error){
+	alert(error.message);
+}

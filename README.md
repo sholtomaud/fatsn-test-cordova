@@ -1,7 +1,12 @@
 fastn-test-cordova
 ==================
 
-To install you will need Android SDK, ADP & Cordova CLI. You will also need crosswalk for Android v4.4 and below.Crosswalk is installed for you by make init.
+To install you will need 
+
+* [Android SDK](https://developer.android.com/sdk/installing/index.html)
+* ADP 
+* Cordova CLI
+* Cordova-crosswalk - which is installed for you by the `make init` command
 
 Install cordova with:
 
